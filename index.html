@@ -55,22 +55,22 @@
         decode: (str) => atob(str),
       };
 
-      const dataParam = {
-        publicKey: "pk_test_NjU4YmM3NmUxZjRhMDY2N2VhOWZlOWJiOjoxMzEyMzc=",
-        amount: 2000,
-        currency: "NGN",
-        customerFirstName: "Nelly",
-        customerLastName: "Nelly",
-        customerEmail: "customer@gmail.com",
-        customerPhone: "08169981421",
-        feeBearer: "customer",
-        reference: `REF_${Date.now()}`,
-        paymentMethods: ["card", "bank_transfer", "payattitude"],
-        defaultPaymentMethod: "card",
-      };
-      const b64 = base64.encode(JSON.stringify(dataParam));
+      // const dataParam = {
+      //   publicKey: "pk_test_NjU4YmM3NmUxZjRhMDY2N2VhOWZlOWJiOjoxMzEyMzc=",
+      //   amount: 2000,
+      //   currency: "NGN",
+      //   customerFirstName: "Nelly",
+      //   customerLastName: "Nelly",
+      //   customerEmail: "customer@gmail.com",
+      //   customerPhone: "08169981421",
+      //   feeBearer: "customer",
+      //   reference: `REF_${Date.now()}`,
+      //   paymentMethods: ["card", "bank_transfer", "payattitude"],
+      //   defaultPaymentMethod: "card",
+      // };
+      // const b64 = base64.encode(JSON.stringify(dataParam));
 
-      console.log(b64);
+      // console.log(b64);
 
       const data = getInfoFromParams();
       if (!data) {
