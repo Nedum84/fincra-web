@@ -167,6 +167,7 @@
             //     updatedAt: "2024-01-14T16:11:23.445Z",
             //   },
             // };
+            await sleep(2000);
             window.location.href = `/success?response=${base64.encode(JSON.stringify(data))}`;
           },
         });
@@ -192,6 +193,11 @@
         }
 
         return queryParams;
+      }
+      function sleep(duration = 500) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => resolve(), duration);
+        });
       }
     })(window);
   </script>
